@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przedmioty-System Zapisów</title>
+    <link rel="stylesheet" href="style8.css">
+    <style>
+        * {
+        margin: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        }
+    header {
+        background-color: #343a40 !important;
+        margin: 0px;
+        width: 100%;
+        height: 60px;
+        font-size: 15px;
+        color: gray;
+
+    }
+    .navbar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: inherit;
+        }
+    li{
+        float: left;
+    }
+    li a {
+        display: block;
+        color: grey;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    li:hover > a{
+        color: lightgray;
+    }
+    .headerLeft{
+        float:left;
+    }
+    
+    .headerRight{
+        float:right;
+    }
+    .top{
+        height: 100px;
+        width: 100%;
+        background-color:steelblue !important;
+    }
+    .container > a{
+        margin: 0 0 0 150px;
+    }
+    h1{
+        font-size: 51px;
+        margin: 50px 0 50px 160px;
+        font-weight: 100;
+    }
+    h2{
+        font-size: 35px;
+        margin: 40px;
+        font-weight: 200;
+    }
+    h5{
+        font-size: 20px;
+        font-style: italic;
+        font-variant: small-caps;
+        position: relative;
+        margin-left: 50px;
+        width: 250px;        
+    }
+    .main{
+        height: auto;
+        width: 80%;
+        margin: auto;
+        background-color:#fff;
+    }
+    .news{
+        padding: 50px;
+        background-color: #f1f1f1;
+        margin-bottom: 20px;
+    }
+    .authorAndDate{
+        height: 50px;
+    }
+    .author{
+        float: left;
+    }
+    .date{
+        float: right;
+        font-style: italic;
+    }
+    .newsText{
+        padding: 50px;
+    }
+    .newsText>span>ul>li{
+        font-size: 16px;
+        float: none;
+    }
+    p{
+        margin-bottom: 1rem;
+        font-size: 16px;
+    }
+    .moreNews{
+        height: 40px;
+        width: 150px;
+        background-color: #00669e;
+        position: relative;
+        left: 85%;
+        margin: 50px;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+        vertical-align: middle;
+    }
+    .moreNews>a{
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+        background-color: gainsboro;
+        text-align: center;
+    }
+    footer > span{
+        position: relative;
+        top: 20px;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerLeft navbar">
+            <ul>
+                <li><a href="#" style="color:linen;">System Zapisów</a></li>
+                <li><a href="#">Ocena Zajęć</a></li>
+                <li><a href="#">Oferta</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Prace Dyplomowe</a></li>
+            </ul>
+        </div>
+        <div class="headerRight navbar">
+            <ul>
+                <li><a href="#">John Doe</a></li>
+                <li><a href="#"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M1 20v-2.946c1.993-.656 2.575-2.158 3.668-6.077.897-3.218 1.891-6.784 4.873-8.023-.027-.147-.041-.299-.041-.454 0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .156-.014.309-.042.458 2.987 1.244 3.984 4.813 4.884 8.033 1.103 3.95 1.697 5.423 3.658 6.062v2.947h-7c0 2.208-1.792 4-4 4s-4-1.792-4-4h-7zm14 0h-6c0 1.656 1.344 3 3 3s3-1.344 3-3zm-13-1h20v-1.241c-2.062-.918-2.82-3.633-3.621-6.498-1.066-3.814-2.167-7.758-6.379-7.761-4.21 0-5.308 3.937-6.369 7.745-.8 2.872-1.559 5.593-3.631 6.514v1.241zm11.492-16.345l.008-.155c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5l.008.152c.455-.099.949-.152 1.487-.152.542 0 1.039.054 1.497.155z"/></svg></a></li>
+                <li><a href="#">Moje Konto</a></li>
+                <li><a href="#">Aktualności</a></li>
+                <li><a href="#">Wyloguj</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="top">
+        <div class="logo header">
+            <div class="container">
+                <a href="#">
+                    <img src="logo-uwr.svg" alt="Uniwersytet Wroclawski">
+                </a>
+            </div>
+        </div>
+    </div>
+    <h1>Aktualności</h1>
+    <div class="main">
+        <div class = "news">
+            <h2>Zajęcia zdalne od poniedziałku 19.10 / Remote classes starting Monday 19th October</h2>
+            <div class = "authorAndDate">
+                <h5 class = "author">Małgorzata Biernacka</h5>
+                <h6 class = "date">Saturday, 17.10.2020 18:04</h6>
+            </div>
+            <div class = "newsText">
+                <span class="markdown-rendered"><p>Szanowni Państwo,</p>
+                    <p>zgodnie z poleceniem Rektora przekazuję informację, że zajęcia dydaktyczne na UWr od najbliższego poniedziałku 19 października będą odbywać się zdalnie do (co najmniej) 15 listopada.</p>
+                    <p>W przypadku zajęć prowadzonych w Instytucie Informatyki tylko następujące przedmioty o charakterze warsztatowym będą prowadzone stacjonarnie:</p>
+                    <ul>
+                    <li>Projekt: Budowa i rozwój analogu łazika marsjańskiego</li>
+                    <li>Systemy wbudowane</li><br>
+                    </ul>
+                
+                    <p>Szczegóły dotyczące sposobu organizacji poszczególnych zajęć prowadzonych dotąd w trybie stacjonarnym lub hybrydowym przekażą Wam niebawem prowadzący. Wszystkie te zajęcia będą się odbywać w zwykłych terminach określonych w planie zajęć.</p>
+                    <p>W związku z tą nagłą decyzją prosimy Was o przygotowanie się do zajęć zdalnych. W szczególności, powinni Państwo mieć dostęp do aplikacji MS Teams oraz przetestować tryb telekonferencji z użyciem mikrofonu i kamery, tak abyście byli gotowi do zajęć zdalnych od poniedziałku.</p>
+                    <p>— English version</p>
+                    <p>Dear Students,</p>
+                    <p>according to Rector’s decision almost all classes at UWr will be taught remotely starting Monday, 19th October until (at least) 15th November.</p>
+                    <p>Shortly, you should receive more details from your teachers on how each course will be organized online. Please be prepared to take part in class using MS Teams, and make sure you have access to camera and microphone. The schedule of online classes is the same as on-site classes.</p>
+                    </span>
+            </div>
+        </div>
+        <div class = "news">
+            <h2>Jutro koniec wypisów</h2>
+            <div class = "authorAndDate">
+                <h5 class = "author">Jan Otop</h5>
+                <h6 class = "date">Thursday, 15.10.2020 · 11:29</h6>
+            </div>
+            <div class = "newsText">
+                <span class="markdown-rendered"><p>Przypominam, że tylko do jutra (piątek 16 października 23:59) można wypisywać się z przedmiotów. Proszę sprawdzić swój aktualny plan.</p>
+                    <p>Koniec zapisów to niedziela 18 października 23:59.</p>
+                    </span>
+            </div>
+        </div>
+        <div class="moreNews">
+            <a href="#">Wiecej Aktualności</a>
+        </div>
+    </div>
+
+    <footer>
+        <span>© 2020 Instytut Informatyki UWr | Nieprawidłowe dane należy zgłaszać na adres zapisy@cs.uni.wroc.pl | Błędy i uwagi:  Wygenerowano: 02:46:58</span>
+    </footer>
+</body>
+</html>

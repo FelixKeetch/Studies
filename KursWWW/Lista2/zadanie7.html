@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie7</title>
+    <style>
+        
+        label{
+            display: block;
+            float: left;
+            width : 120px;    
+        }
+        input{
+            width: 150px;
+            height: 23px;
+            margin: 2px;
+           
+        }
+        input:focus{
+            width: 300px;
+            background-color:seashell;
+            transition: 3.0s;
+            
+        }
+        div{
+            background-color: black;
+            color: white;
+            width: 100px;
+        }
+        a div h1:hover{
+            color: thistle;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="POST">
+        <label for="firstname">Imię : </label>
+        <input type="text" id="firstname" name="firstname">
+        <br>
+        <label for="lastname">Nazwisko : </label>
+        <input type="text" id="lastname" name="lastname">
+        <br>
+        <label for="adres">Adres : </label>
+        <input type="text" id="adres" name="adres">
+        <br>
+        <a href="#">
+            <div>
+                <h1>Submit</h1>
+            </div>
+        </a>
+    </form>
+</body>
+</html>

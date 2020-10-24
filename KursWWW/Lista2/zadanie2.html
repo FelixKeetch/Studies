@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 2</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color:lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        div div{
+            display: flex;
+            justify-content: center;
+            height: 20%;
+            align-items: center;
+            width: 20%;
+            border: 5px solid darkgreen;
+            background-color: mediumaquamarine;
+            padding: 30px;
+        }
+        h3{
+            background-color: white;
+        }
+        .marginClass{
+            color: lightgreen;
+        }
+        
+        .borderClass{
+            color: darkgreen;
+        }
+        .paddingClass{
+            color: mediumaquamarine;
+        }
+        span{
+            background-color: olivedrab;
+        }
+        .inlineClass{
+            color: orangered;
+            display: inline;
+        }
+        .blockClass{
+            color: coral;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h3>Content</h3>
+        </div>
+    </div>
+    
+    <span class="marginClass">
+        <strong>Margin</strong>
+    </span>
+    <br>
+    <span class="borderClass">
+        <strong>Border</strong>
+    </span>
+    <br>
+    <span class="paddingClass">
+        <strong>Padding</strong>
+    </span>
+    <p>This paragraph has a <span>span</span> tag in it. </p>
+    <p>Span używamy dla elementów w inline części dokumentów.</p>
+    <p>Div używamy dla większych elementów strony n.p. sekcji, nav menu itd. </p>
+    <div>
+        <span>W środku div możemy użyć span, ale odwrotne działanie nie jest dozwolone.</span>
+    </div>
+        <h2>display : inline </h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+             Dolor aut soluta <span class = "inlineClass"> Hello</span> iusto ratione accusamus consequuntur ut, <br>
+            sit recusandae? Earum accusantium cumque iusto esse temporibus <br>
+             quidem dignissimos impedit modi! Quibusdam, magni! <br>
+        </p>
+
+        <h2>display : block </h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+             Dolor aut soluta <span class = "blockClass"> Hello</span> iusto ratione accusamus consequuntur ut, <br>
+            sit recusandae? Earum accusantium cumque iusto esse temporibus <br>
+             quidem dignissimos impedit modi! Quibusdam, magni! <br>
+        </p>
+</body>
+</html>

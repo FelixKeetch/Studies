@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>index.html</title>
+    <style>form{
+        display:table-caption;
+    }
+    </style>
+</head>
+
+<body>
+<!--nr  konta,  imię,  nazwisko,  
+    e-mail,  adres,  kodpocztowy,
+     miasto, kwota przelewu,
+      data przelewu.-->
+        <form action="/sendMoney" method="POST" >
+            <label for="accNumber">Numer Konta: </label>
+            <input type="text" id="accNumber" name="accNumber">
+            <br>
+            <label for="name">Imie: </label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="lastname">Nazwisko: </label>
+            <input type="text" id="lastname" name="lastname">
+            <br>
+            <label for="email">email: </label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="address">Adres: </label>
+            <input type="text" id="address" name="address">
+            <br>
+            <label for="code">Kod Pocztowy</label>
+            <input type="text" id="code" name="code">
+            <br>
+            <label for="city">Miasto: </label>
+            <input type="text" id="city" name="city">
+            <br>
+            <label for="amount">Kwota: </label>
+            <input type="text" id="amount" name="amount">
+            <br>
+            <label for="date">Data: </label>
+            <input type="date" id="date" name="date">
+            <br>
+          </form>
+</body>
+</html>

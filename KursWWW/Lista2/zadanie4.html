@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 4</title>
+    <style>
+        .main{
+            height: 4000px;
+            width: 400px;
+            background-color:lightgreen;
+            position: relative;
+            position: absolute;
+            }
+        .div1{
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+            margin: 5px;
+            /* top: 20px; */
+
+            /* Domyslny */
+            /* position: static; */
+
+            /* "Podnosi" div'a. Możemy przesunąć w lewo,
+            w górę, w prawo i w dół. Przy tym, w miejscu div'a 
+            zostaje "cień", który nie pozwoli zająć jego miejsce */
+            position: relative;
+            
+            /* "Podnosi" div'a ale nie zostawia "cieńi". Pozycja względem
+            niestatycznego elementu. */
+            /* position: absolute; */
+
+            /* Działa jak position absolute, tylko względem przeglądarki */
+            /* position: fixed;  */
+        }
+
+        .div2{
+            height: 100px;
+            width: 100px;
+            background-color: violet;
+            /* position: absolute; */
+        }
+        .div3{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            /* position: absolute; */
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">
+        </div>    
+        <div class="div2">
+        </div>
+        <div class="div3">
+        </div>
+    </div>
+    
+</body>
+</html>
