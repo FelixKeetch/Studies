@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mark.js/8.6.0/jquery.mark.min.js"></script>
+    <style>
+        mark {background-color: orange; color: black;}
+    </style>
+</head>
+<body>
+    
+    <input type="text" name="searchphrase" id = "searchphrase">          
+
+    <div>
+        <ul id = "items">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ul>
+    </div>
+    <script>
+        $('#searchphrase').on('keyup', function (){
+            var input = document.getElementById("searchphrase").value; 
+            if( input.length >= 3){
+                $("li").css("color", "lightgray").css("background-color", "white").unmark();
+                var search = $("li:contains('"+ input + "')");
+                search.mark(input);
+                search.css("color", "black");
+            }else{
+                $("li").css("color", "black").css("background-color", "white").unmark();
+            }
+        });
+    </script>
+</body>
+</html>
