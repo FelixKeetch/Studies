@@ -13,4 +13,9 @@ public abstract class Operator2Arg extends Operator1Arg {
         return "(" + w.toString() + " " + znak + " " +
                 w2.toString() + ")";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

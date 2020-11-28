@@ -6,8 +6,8 @@ public class Czytaj extends Instrukcja {
     private String zm;
 
     public Czytaj(String zm){
-//        if(zm == null)
-//            throw new IllegalArgumentException("Zły argument");
+        if(zm == null)
+            throw new IllegalArgumentException("Zły argument");
         this.zm = zm;
     }
 

@@ -1,0 +1,7 @@
+## https://octave-online.net/#
+octave:2> x=-1:0.01:1;
+octave:3> n=10;
+octave:4> y1=cos(n*acos(x))/2^(n-1);
+octave:5> w=poly(-1:2/(n-1):1);
+octave:6> y2=polyval(w,x);
+octave:7> plot(x,y1,x,y2);

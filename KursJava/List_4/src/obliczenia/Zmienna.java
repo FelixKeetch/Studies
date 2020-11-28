@@ -19,7 +19,7 @@ public class Zmienna extends Wyrazenie {
     @Override
     public boolean equals(Object obj) {
         if(obj instanceof Zmienna)
-            return this.oblicz() == ((Zmienna) obj).oblicz();
+            return this.nazwa.equals(((Zmienna)obj).nazwa);
         return false;
     }
 

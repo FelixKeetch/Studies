@@ -6,8 +6,8 @@ public class JezeliIInaczej extends Jezeli {
 
     public JezeliIInaczej(Wyrazenie o, Wykonywalny t, Wykonywalny f) {
         super(o, t);
-//        if(f == null)
-//            throw new IllegalArgumentException("Zły argument");
+        if(f == null)
+            throw new IllegalArgumentException("Zły argument");
         this.f = f;
     }
 

@@ -3,8 +3,8 @@ package obliczenia;
 public class Wypisz extends Instrukcja {
     private Wyrazenie o;
     public Wypisz(Wyrazenie o) {
-//        if(o == null)
-//            throw new IllegalArgumentException("Zły argument");
+        if(o == null)
+            throw new IllegalArgumentException("Zły argument");
         this.o = o;
     }
 

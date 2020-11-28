@@ -5,8 +5,8 @@ public class Przypisanie extends Instrukcja {
     private String  zm;
 
     public Przypisanie(String nazwaZm, Wyrazenie obliczalny){
-//        if(o == null || zm == null)
-//            throw new IllegalArgumentException("Zły argument");
+        if(obliczalny == null || nazwaZm == null)
+            throw new IllegalArgumentException("Zły argument");
         this.o = obliczalny;
         this.zm = nazwaZm;
     }

@@ -5,8 +5,8 @@ public class Jezeli extends Instrukcja {
     Wykonywalny t;
 
     public Jezeli(Wyrazenie o, Wykonywalny t) {
-//        if(o == null || t == null)
-//            throw new IllegalArgumentException("Zły argument");
+        if(o == null || t == null)
+            throw new IllegalArgumentException("Zły argument");
         this.o = o;
         this.t = t;
     }
